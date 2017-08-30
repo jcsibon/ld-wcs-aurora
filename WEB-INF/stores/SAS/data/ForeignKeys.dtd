@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY HOS_STORE_DIR_LOWERCASE "mystore1">
+<!ENTITY STORE_DIRECTORY_LOWERCASE "aurorab2c">
+<!ENTITY MAR_ORGANIZATION_DN "ou=aurorab2c,o=extended sites seller organization,o=root organization">
+<!ENTITY pt_BR "-6">
+<!ENTITY CAT_STORE_DIR "MyCompanyCAS">
+<!ENTITY pl_PL "-22">
+<!ENTITY HOS_STORE_IDENTIFIER "MyStore1">
+<!ENTITY en_US "-1">
+<!ENTITY ja_JP "-10">
+<!ENTITY MAR_STORE_DIR_LOWERCASE "aurorab2c">
+<!ENTITY ru_RU "-20">
+<!ENTITY zh_CN "-7">
+<!ENTITY ro_RO "-21">
+<!ENTITY VENDOR_ID "@vendor_id_1">
+<!ENTITY CAT_STORE_IDENTIFIER_LOWERCASE "mycompanycas">
+<!ENTITY CAT_STORE_IDENTIFIER "MyCompanyCAS">
+<!ENTITY HOS_STORE_IDENTIFIER_LOWERCASE "mystore1">
+<!ENTITY CAT_STORE_DIR_LOWERCASE "mycompanycas">
+<!ENTITY he_IL "-12">
+<!ENTITY zh_TW "-8">
+<!ENTITY es_ES "-5">
+<!ENTITY STORE_IDENTIFIER_LOWERCASE "aurora">
+<!ENTITY STORE_IDENTIFIER "Aurora">
+<!ENTITY CAT_MEMBER_ID "@catalog_mbr_id">
+<!ENTITY STORE_DIR "AuroraB2C">
+<!ENTITY FFMCENTER_ID "@ffmcenter_id_1">
+<!ENTITY ko_KR "-9">
+<!ENTITY MAR_STORE_IDENTIFIER_LOWERCASE "aurorab2c">
+<!ENTITY ORGANIZATION_DN "ou=aurora,o=seller organization,o=root organization">
+<!ENTITY MAR_STOREENT_ID "@marketingStore">
+<!ENTITY it_IT "-4">
+<!ENTITY de_DE "-3">
+<!ENTITY CAT_ORGANIZATION_DN "ou=asset store organization,o=mycompanycasorganization,o=extended sites organization,o=root organization">
+<!ENTITY ar_EG "-23">
+<!ENTITY MAR_STORE_DIR "AuroraB2C">
+<!ENTITY fr_FR "-2">
+<!ENTITY HOS_STORE_DIR "MyStore1">
+<!ENTITY MAR_STORE_IDENTIFIER "AuroraB2C">
+<!ENTITY HOS_ORGANIZATION_DN "ou=extended sites seller organizationmystore1,o=extended sites seller organization,o=root organization">
+<!ENTITY iw_IL "-11">
+<!ENTITY CAT_STOREENT_ID "@catalogStore">
+<!ENTITY MAR_MEMBER_ID "@marketing_mbr_id">
+<!ENTITY tr_TR "-13">
+<!ENTITY HOS_STOREENT_ID "@hostingStore">
+<!ENTITY HOS_MEMBER_ID "@hosting_mbr_id">
+

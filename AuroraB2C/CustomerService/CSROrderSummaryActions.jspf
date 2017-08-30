@@ -1,0 +1,55 @@
+<c:if test = "${fn:contains(validOrderStatusForCancel,order.orderStatus)}">
+	<c:if test="${empty orderMemberDetails}">
+		<wcf:rest var="orderMemberDetails" url="store/{storeId}/person/{memberId}" scope="request">
+			<wcf:var name="storeId" value="${storeId}" encode="true"/>
+			<wcf:var name="memberId" value="${order.buyerId}" encode="true"/>
+			<wcf:param name="responseFormat" value="json" />
+			<wcf:param name="profileName" value="IBM_User_Registration_Details"/>
+		</wcf:rest>
+	</c:if>
+
+	<c:choose>
+		<c:when test="${orderMemberDetails.registerType eq 'G'}">
+			<%-- CSR is accessing guest order. And order doesnt yet contain the address details. So set userName as GUEST --%>
+			<fmt:message key="GUEST" bundle="${storeText}" var="selectedUser"/>
+		</c:when>
+		<c:when test="${locale == 'ja_JP' || locale == 'ko_KR' || locale == 'zh_CN' || locale == 'zh_TW'}">
+			<c:set var="selectedUser" value="${fn:escapeXml(orderMemberDetails.address['lastName'])} ${fn:escapeXml(orderMemberDetails.address['firstName'])}"/>
+		</c:when>
+		<c:otherwise>
+			<c:set var="selectedUser" value="${fn:escapeXml(orderMemberDetails.address['firstName'])} ${fn:escapeXml(orderMemberDetails.address['lastName'])}"/>
+		</c:otherwise>
+	</c:choose>
+	<c:set var="selectedUser" value="${fn:trim(selectedUser)}"/>
+
+	<wcf:url var="landingURL_ShopCartPage" value="AjaxOrderItemDisplayView">
+		<wcf:param name="langId" value="${langId}" />
+		<wcf:param name="storeId" value="${storeId}" />
+		<wcf:param name="catalogId" value="${catalogId}" />
+	</wcf:url>
+
+	<div class="pageSection">
+		<div class="row">
+			<div class="editActions">
+				<c:choose>
+					<c:when test = "${order.orderStatus eq 'P' && orderMemberDetails.registerType != 'G'}">
+						<%-- Allow checkout of only registered customers order --%>
+						<a id = "OrderSummaryPage_Checkout_Order_${WCParam.orderId}" href = "javaScript:setCurrentId(this.id);registeredCustomersJS.setUserInSession('${order.buyerId}', '${selectedUser}', '${landingURL_ShopCartPage}');" tabindex="0" class="button_primary" role="button" aria-label='<fmt:message bundle="${storeText}" key="CHECKOUT_CSR_ARIA"/>'>
+							<div class="left_border"></div>
+							<div class="button_text"><span><fmt:message bundle="${storeText}" key="CHECKOUT_CSR"/></span></div>								
+							<div class="right_border"></div>
+						</a>
+					</c:when>
+					<c:when test = "${fn:contains(validOrderStatusForCancel,order.orderStatus) && (order.orderStatus != 'P')}">
+						<a id = "OrderSummaryPage_CancelOrder_${WCParam.orderId}" href="javaScript:setCurrentId(this.id);onBehalfUtilitiesJS.cancelOrder('${order.orderId}','','false');" 
+						tabindex="0"  class="button_primary" role="button" aria-label='<fmt:message bundle="${storeText}" key="CANCEL_ORDER_CSR_ARIA"/>'>
+							<div class="left_border"></div>
+							<div class="button_text"><span><fmt:message bundle="${storeText}" key="CANCEL_ORDER_CSR"/></span></div>								
+							<div class="right_border"></div>
+						</a>
+					</c:when>
+				</c:choose>
+			</div>
+		</div>
+	</div>
+</c:if>

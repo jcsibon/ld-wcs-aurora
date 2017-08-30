@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY HOS_STORE_DIR_LOWERCASE "mystore1">
+<!ENTITY STORE_DIRECTORY_LOWERCASE "madisons">
+<!ENTITY MAR_STORE_DIR_LOWERCASE "aurorab2c">
+<!ENTITY CATALOG_ID "@catalog_id">
+<!ENTITY zh_CN "-7">
+<!ENTITY ro_RO "-21">
+<!ENTITY CAT_STORE_IDENTIFIER_LOWERCASE "mycompanycas">
+<!ENTITY TRADEPOSCN_ID "@tradeposcn_id">
+<!ENTITY CAT_MEMBER_ID "@catalog_mbr_id">
+<!ENTITY it_IT "-4">
+<!ENTITY MAR_STORE_DIR "AuroraB2C">
+<!ENTITY CATALOG_TARGET_STORE_ID "10051">
+<!ENTITY HOS_STORE_DIR "MyStore1">
+<!ENTITY MAR_MEMBER_ID "@marketing_mbr_id">
+<!ENTITY CAT_STOREENT_ID "@catalogStore">
+<!ENTITY MARKETING_TARGET_STORE_ID "10101">
+<!ENTITY INV_CHOICE "NoInv/">
+<!ENTITY tr_TR "-13">
+<!ENTITY MAR_ORGANIZATION_DN "ou=aurorab2c,o=extended sites seller organization,o=root organization">
+<!ENTITY CAT_STORE_DIR "MyCompanyCAS">
+<!ENTITY pt_BR "-6">
+<!ENTITY HOS_STORE_IDENTIFIER "MyStore1">
+<!ENTITY en_US "-1">
+<!ENTITY pl_PL "-22">
+<!ENTITY ja_JP "-10">
+<!ENTITY LIST_TRADEPOSCN_ID "@list_tradeposcn_id">
+<!ENTITY ru_RU "-20">
+<!ENTITY VENDOR_ID "@vendor_id_1">
+<!ENTITY CAT_STORE_IDENTIFIER "MyCompanyCAS">
+<!ENTITY HOSTING_TARGET_STORE_ID "10151">
+<!ENTITY HOS_STORE_IDENTIFIER_LOWERCASE "mystore1">
+<!ENTITY CAT_STORE_DIR_LOWERCASE "mycompanycas">
+<!ENTITY zh_TW "-8">
+<!ENTITY he_IL "-12">
+<!ENTITY ATTR_CHOICE "Classic">
+<!ENTITY es_ES "-5">
+<!ENTITY STORE_DIR "Madisons">
+<!ENTITY FFMCENTER_ID "@ffmcenter_id_1">
+<!ENTITY ko_KR "-9">
+<!ENTITY MAR_STORE_IDENTIFIER_LOWERCASE "aurorab2c">
+<!ENTITY MAR_STOREENT_ID "@marketingStore">
+<!ENTITY de_DE "-3">
+<!ENTITY CAT_ORGANIZATION_DN "ou=asset store organization,o=mycompanycasorganization,o=extended sites organization,o=root organization">
+<!ENTITY ar_EG "-23">
+<!ENTITY fr_FR "-2">
+<!ENTITY MAR_STORE_IDENTIFIER "AuroraB2C">
+<!ENTITY HOS_ORGANIZATION_DN "ou=extended sites seller organizationmystore1,o=extended sites seller organization,o=root organization">
+<!ENTITY iw_IL "-11">
+<!ENTITY HOS_STOREENT_ID "@hostingStore">
+<!ENTITY HOS_MEMBER_ID "@hosting_mbr_id">
+
